@@ -7,6 +7,7 @@ var bgcolor;
   
 function setup () {
   createCanvas(windowWidth, windowHeight);
+  background ("#e25a93");
   bgcolor = color(200);
  // createButton("Change Background");
 }
