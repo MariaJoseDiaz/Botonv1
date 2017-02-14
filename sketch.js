@@ -64,8 +64,8 @@ function draw() {
 
 
   function mousePressed () {
-    if (mouseX >= ((width/8)*2) && mouseX <= ((width/8)*2) + rect_widht && mouseY >= ((width/8)*2) && mouseY <= ((width/8)*2) + rect_height)
-    background(0);
+    if (mouseX >= ((width/8)*2) && mouseX <= ((width/8)*2) + rect_widht && mouseY >= ((width/8)*2) && mouseY <= ((width/8)*2) + rect_height);
+    background("f27bde");
 }
 
 /*
