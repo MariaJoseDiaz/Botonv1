@@ -67,7 +67,7 @@ function draw() {
 }
 
   function mousePressed () {
-    if (mouseX >= ((width/8)*2) && mouseX <= ((width/8)*2) + rect_widht && mouseY >= ((height/15)*14)-3 && mouseY <= (((height/15)*14)-3) + rect_height);
+    if (mouseX >= ((width/8)*2) && mouseX <= ((width/8)*2) + rect_widht && mouseY >= ((width/8)*2) && mouseY <= ((width/8)*2) + rect_height);
      bgcolor = color(random(0, 170), random(0, 170), random(0, 170));
     // background(0);
  
