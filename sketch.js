@@ -3,13 +3,22 @@
   var rect_height = 10;
   
 
+
 function setup() {
       createCanvas(windowWidth, windowHeight);
+}
+
+
+  function mousePressed () {
+    if (mouseX >= ((width/8)*2) && mouseX <= ((width/8)*2) + rect_widht && mouseY >= ((width/8)*2) && mouseY <= ((width/8)*2) + rect_height);
+    background("f27bde");
+ 
 }
 
 function draw() {
    background(204);
  
+  
    
      textSize(height/30);
      textAlign(CENTER);
@@ -62,11 +71,6 @@ function draw() {
     
 }
 
-
-  function mousePressed () {
-    if (mouseX >= ((width/8)*2) && mouseX <= ((width/8)*2) + rect_widht && mouseY >= ((width/8)*2) && mouseY <= ((width/8)*2) + rect_height);
-    background("f27bde");
-}
 
 /*
 var bgcolor;
