@@ -1,4 +1,34 @@
 
+ var bgcolor;
+
+  var rect_x = 100;
+  var rect_y = 100;
+  var rect_widht = 200;
+  var rect_height = 150;
+  
+function setup () {
+  createCanvas(windowWidth, windowHeight);
+  bgcolor = color(200);
+ // createButton("Change Background");
+}
+
+function touchStarted () {
+  //if touches[x, y, rect_widht, rect_height]
+  if (mouseX >= x && mouseX <= x + rect_widht && mouseY >= y && mouseY <= y + rect_height)
+  bgcolor = color(random(0, 170), random(0, 170), random(0, 170));
+}
+
+function draw () {
+  background(bgcolor);
+  fill(255, 0, 0);
+  rect(x, y, rect_widht, rect_height);
+  fill(255);
+  textSize(60);
+  text('Click on background of canvas.', 100, 100);
+}
+
+/*
+
   var rect_widht = 60;
   var rect_height = 10;
   
@@ -68,32 +98,4 @@ function draw() {
  //     function mouseIsPressed () {
     if (mouseX >= ((width/8)*2) && mouseX <= ((width/8)*2) + rect_widht && mouseY >= ((width/8)*2) && mouseY <= ((width/8)*2) + rect_height)
     background(0);
-}
-
-/* var bgcolor;
-
-  var rect_x = 100;
-  var rect_y = 100;
-  var rect_widht = 200;
-  var rect_height = 150;
-  
-function setup () {
-  createCanvas(windowWidth, windowHeight);
-  bgcolor = color(200);
- // createButton("Change Background");
-}
-
-function touchStarted () {
-  //if touches[x, y, rect_widht, rect_height]
-  if (mouseX >= x && mouseX <= x + rect_widht && mouseY >= y && mouseY <= y + rect_height)
-  bgcolor = color(random(0, 170), random(0, 170), random(0, 170));
-}
-
-function draw () {
-  background(bgcolor);
-  fill(255, 0, 0);
-  rect(x, y, rect_widht, rect_height);
-  fill(255);
-  textSize(60);
-  text('Click on background of canvas.', 100, 100);
 }
