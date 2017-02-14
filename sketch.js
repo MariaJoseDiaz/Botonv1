@@ -1,4 +1,75 @@
-var bgcolor;
+
+  var rect_widht = 60;
+  var rect_height = 10;
+  
+
+function setup() {
+      createCanvas(windowWidth, windowHeight);
+
+}
+
+function draw() {
+   background(204);
+ 
+   
+     textSize(height/30);
+     textAlign(CENTER);
+     textStyle(BOLD);
+     fill(0);
+     noStroke();
+     text("EARTHQUAKE INTENSITY", width/2,height - height/1.1);
+     
+    fill(0);
+    noStroke();    
+    
+    textSize(height/30);
+    textAlign(CENTER);
+    textStyle(NORMAL);
+    text("Magnitude", width/2, height - height/5);
+        
+    textSize(height/20);
+    textAlign(CENTER);
+    textStyle(BOLD);
+    text("1",width/2, height - height/6.7);
+    
+    
+    textSize(height/40);
+    textAlign(CENTER);
+    textStyle(BOLD);
+    text("see results",(width/8)*2, (height/15)*14);
+    rectMode(CENTER);
+    noFill();
+    stroke(255);
+    rect(((width/8)*2), ((height/15)*14)-3, rect_widht, rect_height);
+
+  
+    fill(0)
+    noStroke()
+    textSize(height/40);
+    textAlign(CENTER);
+    textStyle(BOLD);
+    text("try again",(width/8)*6, (height/15)*14);
+    rectMode(CENTER);
+    noFill();
+    stroke(255);
+    rect(((width/8)*6), ((height/15)*14)-3, rect_widht, rect_height);
+
+   
+    translate(0, -40);
+    noFill();
+    stroke(0);
+    strokeWeight(1);
+    ellipse (width/2, height/2, 100* 2, 100 * 2);
+    
+}
+
+ function touchStarted () {
+ //     function mouseIsPressed () {
+    if (mouseX >= ((width/8)*2) && mouseX <= ((width/8)*2) + rect_widht && mouseY >= ((height/15)*14)-3 && mouseY <= ((height/15)*14)-3 + rect_height)
+   background(0);
+}
+
+/* var bgcolor;
 
   var rect_x = 100;
   var rect_y = 100;
