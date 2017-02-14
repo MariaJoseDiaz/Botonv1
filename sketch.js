@@ -14,7 +14,7 @@ function setup () {
 
 function touchStarted () {
   //if touches[x, y, rect_widht, rect_height]
-  if (mouseX >= x && mouseX <= x + rect_widht && mouseY >= y && mouseY <= y + rect_height)
+  if (mouseX >= x && mouseX <= x + rect_widht && mouseY >= x && mouseY <= x + rect_height)
   bgcolor = color(random(0, 170), random(0, 170), random(0, 170));
 }
 
