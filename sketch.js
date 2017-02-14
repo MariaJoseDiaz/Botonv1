@@ -11,7 +11,7 @@ function setup() {
 
 
 function draw() {
-    bgcolor = color(60);
+    bgcolor = color(204);
  
   
    
