@@ -1,7 +1,7 @@
 
   var rect_widht = 60;
   var rect_height = 10;
-  
+  var bgcolor;
 
 
 function setup() {
@@ -9,11 +9,6 @@ function setup() {
 }
 
 
-  function mousePressed () {
-    if (mouseX >= ((width/8)*2) && mouseX <= ((width/8)*2) + rect_widht && mouseY >= ((width/8)*2) && mouseY <= ((width/8)*2) + rect_height);
-    background(0);
- 
-}
 
 function draw() {
    background("f27bde");
@@ -71,6 +66,12 @@ function draw() {
     
 }
 
+  function mousePressed () {
+    if (mouseX >= ((width/8)*2) && mouseX <= ((width/8)*2) + rect_widht && mouseY >= ((height/15)*14)-3 && mouseY <= (((height/15)*14)-3) + rect_height);
+     bgcolor = color(random(0, 170), random(0, 170), random(0, 170));
+    // background(0);
+ 
+}
 
 /*
 var bgcolor;
