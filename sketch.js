@@ -1,7 +1,7 @@
 var bgcolor;
 
-  var x = 100;
-  var y = 100;
+  var rect_x = 100;
+  var rect_y = 100;
   var rect_widht = 200;
   var rect_height = 150;
   
@@ -13,7 +13,7 @@ function setup () {
 
 function touchStarted () {
   //if touches[x, y, rect_widht, rect_height]
-  if (mouseX >= x && mouseX <= x + rect_widht && mouseY >= x && mouseY <= x + rect_height)
+  if (mouseX >= x && mouseX <= x + rect_widht && mouseY >= y && mouseY <= y + rect_height)
   bgcolor = color(random(0, 170), random(0, 170), random(0, 170));
 }
 
