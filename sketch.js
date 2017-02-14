@@ -73,14 +73,6 @@ function draw() {
  
 }
 
-function draw () {
-  background(bgcolor);
-  fill(255, 0, 0);
-  rect(x, y, rect_widht, rect_height);
-  fill(255);
-  textSize(60);
-  text('Click on background of canvas.', 100, 100);
-}
 
 /*
 var bgcolor;
