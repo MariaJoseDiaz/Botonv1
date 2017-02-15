@@ -14,6 +14,8 @@ function draw() {
    bgcolor = color(204);
    background(bgcolor);
   
+   rect(100,100,rect_widht,rect_height);
+  Fill(242, 123, 222);
    
      textSize(height/30);
      textAlign(CENTER);
@@ -64,14 +66,15 @@ function draw() {
     strokeWeight(1);
     ellipse (width/2, height/2, 100* 2, 100 * 2);
   
-    rect(((width/8)*2),((height/15)*14)-3,rect_widht,rect_height);
-  Fill(242, 123, 222);
+
     
 }
 
   function mousePressed () {
     if (mouseX >= ((width/8)*2) && mouseX <= ((width/8)*2) + rect_widht && mouseY >= ((width/8)*2) && mouseY <= ((width/8)*2) + rect_height);
-     bgcolor = color(random(0, 170), random(0, 170), random(0, 170));
+     if (mouseX >= 100 && mouseX <= 100 + rect_widht && mouseY >= 100 && mouseY <= 100 + rect_height);
+ 
+    bgcolor = color(random(0, 170), random(0, 170), random(0, 170));
     // background(0);
  
 }
