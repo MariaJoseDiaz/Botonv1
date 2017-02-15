@@ -11,8 +11,8 @@ function setup() {
 
 
 function draw() {
-    bgcolor = color(204);
- 
+   bgcolor = color(204);
+   background(bgcolor);
   
    
      textSize(height/30);
