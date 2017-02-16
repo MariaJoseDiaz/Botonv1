@@ -27,7 +27,6 @@ function draw () {
   text('Click on background of canvas.', 100, 100);
 }
 
-*/
 
 /*
  var rect_widht = 60;
